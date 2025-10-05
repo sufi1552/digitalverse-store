@@ -4,36 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DigitalVerse Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 0;}
-    header {background: #111; color: #fff; text-align: center; padding: 1.5rem;}
-    h1 {margin: 0;}
-    .container {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px;}
-    .product {background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 15px; text-align: center;}
-    .product img {width: 100%; border-radius: 10px;}
-    .btn {display: inline-block; background: #111; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;}
-    .btn:hover {background: #333;}
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #111827, #1e293b);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #2563eb, #9333ea);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product {
+      background: #1f2937;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      font-size: 1.2rem;
+      margin: 15px 0 5px;
+      text-align: center;
+    }
+
+    .product p {
+      text-align: center;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 15px auto 25px;
+      background: linear-gradient(135deg, #2563eb, #9333ea);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #9333ea, #2563eb);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      border-top: 1px solid #374151;
+      background: #111827;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>DigitalVerse Store</h1>
-    <p>Premium eBooks, Design Files & Coding Tools</p>
+    <p>Premium eBooks, Design Files & Coding Tools for Creators</p>
   </header>
 
   <div class="container">
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Product 1">
+      <img src="https://via.placeholder.com/400x250" alt="eBook">
       <h3>Creative eBook</h3>
       <p>$9.99</p>
       <a href="#" class="btn">Buy Now</a>
     </div>
+
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Product 2">
+      <img src="https://via.placeholder.com/400x250" alt="Design Pack">
       <h3>Design Pack</h3>
       <p>$14.99</p>
       <a href="#" class="btn">Buy Now</a>
     </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/400x250" alt="Coding Kit">
+      <h3>Coding Tools Kit</h3>
+      <p>$19.99</p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
   </div>
+
+  <footer>
+    © 2025 DigitalVerse Store | Built with ❤️ by <a href="https://github.com/sufi1552" target="_blank">sufi1552</a>
+  </footer>
 </body>
 </html>
