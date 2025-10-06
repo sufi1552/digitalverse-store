@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DigitalVerse Store – Smart Digital Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DigitalVerse Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <nav>
       <div class="logo">
         <img src="images/logo.png" alt="DigitalVerse Logo" />
-        <h1>DigitalVerse Store</h1>
+        <span>DigitalVerse Store</span>
       </div>
       <ul class="menu">
         <li><a href="#products">Products</a></li>
@@ -23,80 +22,58 @@
     </nav>
 
     <div class="hero">
-      <h2>Grow Your Business with Digital Tools</h2>
-      <p>Explore professional digital resources, templates, and creative assets — designed to boost your productivity.</p>
-      <a href="#products" class="btn">Explore Now</a>
+      <h1>DigitalVerse Store</h1>
+      <p>Premium digital tools, templates and creative assets.</p>
+      <a class="btn" href="#products">Explore Now</a>
     </div>
   </header>
 
-  <!-- Products Section -->
-  <section id="products" class="products">
-    <h2>Our Featured Products</h2>
-    <div class="product-grid">
+  <main>
+    <section id="products" class="products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/wordpress-581849_1280.jpg" alt="Product 1">
+          <h3>DigitalVerse Creator Kit</h3>
+          <p class="price">$10</p>
+        </article>
 
-      <div class="product-card">
-        <img src="images/wordpress-581849_1280.jpg" alt="DigitalVerse Creator Kit" />
-        <h3>DigitalVerse Creator Kit</h3>
-        <p>eBooks, Design Files & Coding Tools</p>
-        <span class="price">$10</span>
-        <a href="https://payhip.com/b/7oHdR" target="_blank" class="btn">Buy Now</a>
+        <article class="product-card">
+          <img src="images/Logo-envato.jpg" alt="Product 2">
+          <h3>Logo Export Pro</h3>
+          <p class="price">$15</p>
+        </article>
+
+        <article class="product-card">
+          <img src="images/icons-1312801_640.png" alt="Product 3">
+          <h3>21 Insect Coloring Pages</h3>
+          <p class="price">$3</p>
+        </article>
       </div>
+    </section>
 
-      <div class="product-card">
-        <img src="images/Logo-envato.jpg" alt="Logo Export Pro" />
-        <h3>Logo Export Pro</h3>
-        <p>Adobe Illustrator Script</p>
-        <span class="price">$15</span>
-        <a href="https://sufiqazmi.gumroad.com/l/ymymbv" target="_blank" class="btn">Buy Now</a>
+    <section id="partners" class="partners">
+      <h2>Partners</h2>
+      <div class="partner-logos">
+        <img src="images/Logo-envato.jpg" alt="Envato">
+        <img src="images/paypal-784404_640.png" alt="PayPal">
+        <img src="images/Rupay-Logo.png" alt="Rupay">
       </div>
+    </section>
 
-      <div class="product-card">
-        <img src="images/icons-1312801_640.png" alt="21 Insect Coloring Pages" />
-        <h3>21 Insect Coloring Pages</h3>
-        <p>Fun and educational printable art</p>
-        <span class="price">$3</span>
-        <a href="https://sufiqazmi.gumroad.com/l/anecc" target="_blank" class="btn">Buy Now</a>
-      </div>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/myznppzb" method="POST">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-      <div class="product-card">
-        <img src="images/job-5382501_640.jpg" alt="Money Making eBook" />
-        <h3>Money Making eBook</h3>
-        <p>Learn to sell eBooks online</p>
-        <span class="price">$5</span>
-        <a href="https://sufiqazmi.gumroad.com/l/lxqttq" target="_blank" class="btn">Buy Now</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Partners Section -->
-  <section id="partners" class="partners">
-    <h2>Trusted Partners</h2>
-    <div class="partner-logos">
-      <img src="images/Logo-envato.jpg" alt="Envato" />
-      <img src="images/paypal-784404_640.png" alt="PayPal" />
-      <img src="images/Rupay-Logo.png" alt="Rupay" />
-      <img src="images/Bitcoin.svg" alt="Bitcoin" />
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/myznppzb" method="POST">
-      <label>Full Name</label>
-      <input type="text" name="name" required />
-      <label>Email Address</label>
-      <input type="email" name="email" required />
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 DigitalVerse Store. Built for Modern Entrepreneurs.</p>
+    <p>© 2025 DigitalVerse Store</p>
   </footer>
 
   <script src="script.js"></script>
