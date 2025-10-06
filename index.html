@@ -1,284 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DigitalVerse Store – Your Digital Product Universe</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f7f9fc;
-  color: #222;
-}
-header {
-  background: linear-gradient(135deg, #5a00f0, #00c3ff);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-header img {
-  width: 120px;
-  border-radius: 20px;
-}
-header h1 {
-  font-size: 2.5em;
-  margin: 15px 0 5px;
-}
-header p {
-  font-size: 1.1em;
-  opacity: 0.9;
-}
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-  padding: 50px 8%;
-}
-.product-card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  text-align: center;
-  overflow: hidden;
-  transition: transform 0.3s;
-  padding-bottom: 25px;
-}
-.product-card:hover {
-  transform: translateY(-6px);
-}
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.discount {
-  background: crimson;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 0.85em;
-  position: relative;
-  top: -10px;
-}
-.product-card h3 {
-  margin: 15px 10px 5px;
-}
-.price {
-  font-weight: 600;
-  color: #333;
-}
-button.buy {
-  background: linear-gradient(135deg,#4e00c2,#00d4ff);
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 10px;
-}
-button.buy:hover {
-  opacity: 0.9;
-}
-
-/* Contact Section */
-.contact {
-  background: #fff;
-  padding: 60px 10%;
-  text-align: center;
-}
-.contact h2 {
-  color: #5a00f0;
-}
-.contact form {
-  max-width: 500px;
-  margin: auto;
-  text-align: left;
-}
-.contact input, .contact textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-.contact button {
-  background: linear-gradient(135deg, #5a00f0, #00c3ff);
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.contact button:hover {
-  opacity: 0.9;
-}
-
-/* Partners */
-.partners {
-  background: #f0f4ff;
-  text-align: center;
-  padding: 50px 10%;
-}
-.partners img {
-  width: 120px;
-  margin: 15px;
-  vertical-align: middle;
-}
-
-/* Work Tools */
-.work-tools {
-  background: #fff;
-  text-align: center;
-  padding: 50px 10%;
-}
-.work-tools img {
-  width: 200px;
-  border-radius: 16px;
-  margin: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Payment Methods */
-.payments {
-  background: #f9fafc;
-  text-align: center;
-  padding: 40px 10%;
-}
-.payments img {
-  width: 70px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9em;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalVerse Store – Smart Digital Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="DigitalVerse Logo">
+        <h1>DigitalVerse Store</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<header>
-  <img src="logo.png" alt="DigitalVerse Logo">
-  <h1>DigitalVerse Store</h1>
-  <p>Your Digital Product Universe</p>
-</header>
+    <div class="hero">
+      <h2>Grow Your Business with Digital Tools</h2>
+      <p>Explore professional digital resources, templates, and creative assets — designed to boost your productivity.</p>
+      <a href="#products" class="btn">Explore Now</a>
+    </div>
+  </header>
 
-<section class="products">
-  <!-- Product Cards -->
-  <div class="product-card">
-    <img src="https://i.ibb.co/HHrt7n3/digital-products.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>eBooks, Design Files & Coding Tools</h3>
-    <p class="price">$10</p>
-    <a href="https://payhip.com/b/7oHdR" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <img src="https://i.ibb.co/HHrt7n3/digital-products.jpg" alt="">
+        <h3>DigitalVerse Creator Kit</h3>
+        <p>eBooks, Design Files & Coding Tools</p>
+        <span class="price">$10</span>
+        <a href="https://payhip.com/b/7oHdR" target="_blank" class="btn">Buy Now</a>
+      </div>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/93RHC5f/logo-export.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>Logo Export Pro – Adobe Illustrator Script</h3>
-    <p class="price">$15</p>
-    <a href="https://sufiqazmi.gumroad.com/l/ymymbv" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+      <div class="product-card">
+        <img src="https://i.ibb.co/93RHC5f/logo-export.jpg" alt="">
+        <h3>Logo Export Pro</h3>
+        <p>Adobe Illustrator Script</p>
+        <span class="price">$15</span>
+        <a href="https://sufiqazmi.gumroad.com/l/ymymbv" target="_blank" class="btn">Buy Now</a>
+      </div>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/2WmbVGv/insects.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>21 Insect Coloring Pages for Kids</h3>
-    <p class="price">$3</p>
-    <a href="https://sufiqazmi.gumroad.com/l/anecc" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+      <div class="product-card">
+        <img src="https://i.ibb.co/2WmbVGv/insects.jpg" alt="">
+        <h3>21 Insect Coloring Pages</h3>
+        <p>Fun and educational printable art</p>
+        <span class="price">$3</span>
+        <a href="https://sufiqazmi.gumroad.com/l/anecc" target="_blank" class="btn">Buy Now</a>
+      </div>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/XZk8T8F/ebook.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>How to Make Money Selling eBooks</h3>
-    <p class="price">$5</p>
-    <a href="https://sufiqazmi.gumroad.com/l/lxqttq" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+      <div class="product-card">
+        <img src="https://i.ibb.co/XZk8T8F/ebook.jpg" alt="">
+        <h3>Money Making eBook</h3>
+        <p>Learn to sell eBooks online</p>
+        <span class="price">$5</span>
+        <a href="https://sufiqazmi.gumroad.com/l/lxqttq" target="_blank" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/ftYbTGy/dino.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>Cute Dinosaur Coloring Book (25 Pages)</h3>
-    <p class="price">$8</p>
-    <a href="https://sufiqazmi.gumroad.com/l/grwac" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+  <!-- Partners Section -->
+  <section id="partners" class="partners">
+    <h2>Trusted Partners</h2>
+    <div class="partner-logos">
+      <img src="https://i.ibb.co/Lt6WNp2/flippa.png" alt="Flippa">
+      <img src="https://i.ibb.co/ykjDbqW/payhip.png" alt="Payhip">
+      <img src="https://i.ibb.co/MsWRgRL/gumroad.png" alt="Gumroad">
+      <img src="https://i.ibb.co/kS7WdhR/envato.png" alt="Envato">
+    </div>
+  </section>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/9rWVkQ4/profile-template.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>Professional Business Profile Template</h3>
-    <p class="price">$8</p>
-    <a href="https://sufiqazmi.gumroad.com/l/ywcmg" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/myznppzb" method="POST">
+      <label>Full Name</label>
+      <input type="text" name="name" required>
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/1JwSg3d/resume.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>Graphic Designer Resume Template</h3>
-    <p class="price">$3</p>
-    <a href="https://sufiqazmi.gumroad.com/l/fpoor" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 DigitalVerse Store. Built for Modern Entrepreneurs.</p>
+  </footer>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/dDVnYcV/dino2.jpg" alt="">
-    <div class="discount">25% OFF</div>
-    <h3>26 Fun Dinosaur Coloring Pages for Kids</h3>
-    <p class="price">$6</p>
-    <a href="https://sufiqazmi.gumroad.com/l/zjhkvw" target="_blank"><button class="buy">Buy Now</button></a>
-  </div>
-</section>
-
-<section class="work-tools">
-  <h2>Our Work Tools</h2>
-  <img src="https://i.ibb.co/VjM0rsv/work1.jpg" alt="">
-  <img src="https://i.ibb.co/zSGxwFt/work2.jpg" alt="">
-  <img src="https://i.ibb.co/vcHYKzd/work3.jpg" alt="">
-  <img src="https://i.ibb.co/Qj7D4ZW/work4.jpg" alt="">
-</section>
-
-<section class="partners">
-  <h2>Our Official Partners</h2>
-  <img src="https://i.ibb.co/Lt6WNp2/flippa.png" alt="Flippa">
-  <img src="https://i.ibb.co/ykjDbqW/payhip.png" alt="Payhip">
-  <img src="https://i.ibb.co/MsWRgRL/gumroad.png" alt="Gumroad">
-  <img src="https://i.ibb.co/kS7WdhR/envato.png" alt="Envato">
-</section>
-
-<section class="payments">
-  <h2>Accepted Payment Methods</h2>
-  <img src="https://i.ibb.co/KrTn9WZ/visa.png" alt="">
-  <img src="https://i.ibb.co/0hK3WbG/mastercard.png" alt="">
-  <img src="https://i.ibb.co/VNLBHrM/paypal.png" alt="">
-  <img src="https://i.ibb.co/Qd1S2b2/upi.png" alt="">
-</section>
-
-<section class="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/myznppzb" method="POST">
-    <label>Full Name</label>
-    <input type="text" name="name" required>
-    <label>Email Address</label>
-    <input type="email" name="email" required>
-    <label>Message</label>
-    <textarea name="message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2025 DigitalVerse Store. All Rights Reserved.</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
